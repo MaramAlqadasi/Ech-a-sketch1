@@ -1,0 +1,48 @@
+.mainContainer{
+    
+   
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    
+}
+
+.board
+{
+    height: 30rem;
+    width: 30rem;
+    box-shadow: #808034 10px 8px 20px;
+    margin: 10px;
+    border-radius: 10px;
+}
+.sideBar{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 10px;
+    padding: 10px 10px;
+    
+}
+ input[type="button" ],input[type="color"]{
+    padding: 10px 50px;
+    margin: 10px 16px;
+    width: 107%;
+    box-shadow: #808032 3px 4px 11px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    background-color: #808034;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+}
+.boardSection{
+    text-align: center;
+    color: #808034;
+    font-weight: bold;
+    line-height: 10px;
+    font-size: 1.5rem;
+}
