@@ -16,6 +16,8 @@
     box-shadow: #808034 10px 8px 20px;
     margin: 10px;
     border-radius: 10px;
+    display: grid;
+    grid-auto-rows: minmax(100px, auto);
 }
 .sideBar{
     display: flex;

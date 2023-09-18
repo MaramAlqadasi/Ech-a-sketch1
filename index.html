@@ -6,24 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ech-a-sketch</title>
     <link rel="stylesheet" href="style.css">
-    <script src="javascript.js" defer></script>
+  
 </head>
 <body>
     <header></header>
     <section class="mainContainer">
         <div class="sideBar">
             <input type="color" class="color" value="#808034">
-            <input type="button" value="Rainbow">
-            <input type="button" value="Gray">
-            <input type="button" value="Erase">
-            <input type="button" value="reset">
+            <input type="button" class="rainbow" value="Rainbow">
+            <input type="button" class="gray" value="Gray">
+            <input type="button" class="erase" value="Erase">
+            <input type="button" class="reset" value="reset">
+            <input type="range" id="range1" min=1 max=100 value=16>
             
         </div>
         <div class="boardSection">
-            <h1>16 x 16</h1>
+            <h1 id="titleSize">16 x 16</h1>
             <div class="board"></div>
         </div>
     </section>
-    
+    <script src="javascript.js" defer></script>
 </body>
 </html>
