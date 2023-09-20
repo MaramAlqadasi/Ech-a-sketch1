@@ -1,3 +1,9 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 .mainContainer{
     
    
@@ -17,7 +23,7 @@
     margin: 10px;
     border-radius: 10px;
     display: grid;
-    grid-auto-rows: minmax(100px, auto);
+  
 }
 .sideBar{
     display: flex;
@@ -82,5 +88,8 @@ input[type="button" ]:hover{
     border-radius: 10px;
     color: aliceblue;
   }
- 
+ .activ{
+    background-color:#d4683a;
+    color:white;
+ }
   
