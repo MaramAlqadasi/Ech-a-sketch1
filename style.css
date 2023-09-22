@@ -48,9 +48,8 @@
     cursor: pointer;
     margin-bottom: 20px;
 }
-input[type="button" ]:hover{
-    color: #d34509;
-    scale: 1.1;
+input[type="button" ],.color:hover{
+    scale: 1.05;
 }
 .boardSection{
     text-align: center;
@@ -82,13 +81,13 @@ input[type="button" ]:hover{
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
-    background-color: #d4683a;
     cursor: pointer;
-    border: none;
+    border: 0.1px solid #d4683a;
     border-radius: 10px;
-    color: aliceblue;
+   
   }
- .activ{
+ .button.activ{
+    
     background-color:#d4683a;
     color:white;
  }
