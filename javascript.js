@@ -37,8 +37,9 @@ function setCurrentMode(newMode) {
   }
 
 function reloadBoard(){
-    setGrids(currentSize);
-    clearBoard();
+  clearBoard();
+  setGrids(currentSize);
+    
 }
 function clearBoard(){
     board.innerHTML="";
@@ -94,7 +95,14 @@ color.oninput = (e) => setCurrentColor(e.target.value)
 oneColorBtn.onclick = () => setCurrentMode("oneColor")
 rainbow.onclick = () => setCurrentMode('Rainbow')
 eraser.onclick = () => setCurrentMode('eraser')
-reset.onclick = () => reloadBoard()
+reset.onclick = () => {
+  reset.classList.add("activ");
+  setInterval(() => {
+    reset.classList.remove("activ");
+  }, 100);
+  
+  reloadBoard();
+} 
 //rainbow.addEventListener("click",setCurrentMode("RainbowColor"));
 
 
