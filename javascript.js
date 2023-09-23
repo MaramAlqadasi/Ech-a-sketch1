@@ -7,7 +7,6 @@ let currentColor=defultColor;
 const color=document.querySelector(".color");
 const range=document.getElementById("range1");
 const board=document.querySelector(".board");
-const titleSize=document.querySelector("#titleSize");
 const eraser=document.querySelector(".erase");
 const reset=document.querySelector(".reset");
 const rainbow=document.querySelector(".rainbow");
@@ -65,10 +64,7 @@ function changeColor(e) {
     }
 }
 function updateSizeValue(newSize) {
-     
-    titleSize.textContent=`${newSize} X ${newSize}`;
     rangeTitle.textContent= `${newSize} X ${newSize}`;
-    
   }
 
   function activateButton(newMode) {

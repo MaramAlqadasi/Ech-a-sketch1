@@ -56,7 +56,10 @@ input[type="button" ],.color:hover{
     color: #d4683a;
     font-weight: bold;
     line-height: 10px;
-    font-size: 1.5rem;
+    font-size: 2rem;
+}
+#title{
+    margin-bottom: 20px;
 }
 .color{
     -webkit-appearance: none;
