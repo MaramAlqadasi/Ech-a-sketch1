@@ -37,7 +37,7 @@ function setCurrentMode(newMode) {
 
 function reloadBoard(){
   clearBoard();
-  setGrids(currentSize);
+  setGrids(defultSize);
     
 }
 function clearBoard(){
@@ -109,6 +109,7 @@ function setGrids(size){
     for(let i=1;i<=size;i++){
         for(let j=1;j<=size;j++){
            const square= document.createElement("div");
+           square.classList.add("square");
            square.addEventListener("mouseover",changeColor);
            square.addEventListener('mousedown', changeColor)
            board.append(square); 

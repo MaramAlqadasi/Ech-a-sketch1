@@ -59,7 +59,7 @@ input[type="button" ],.color:hover{
     font-size: 2rem;
 }
 #title{
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 }
 .color{
     -webkit-appearance: none;
@@ -143,6 +143,23 @@ input[type="button" ],.color:hover{
     cursor: pointer;
     -webkit-appearance: none;
     margin-top: -7px;
+  }
+  @media screen and (max-width:768px) {
+    .mainContainer{
+      flex-direction: column-reverse;
+    }
+    
+    
+  }
+  @media screen and (max-width:530px){
+   
+    .board{
+      height: 20rem;
+      width: 20rem;
+      margin: 5px;
+    }
+  
+    
   }
   
   
