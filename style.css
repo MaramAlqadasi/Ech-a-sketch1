@@ -144,6 +144,17 @@ input[type="button" ],.color:hover{
     -webkit-appearance: none;
     margin-top: -7px;
   }
+  .footer{
+    text-align: center;
+    font-weight: bold;
+    margin-top: 50px;
+  }
+.footer a{
+  text-decoration: none;
+  color:#d4683a;
+}
+
+  
   @media screen and (max-width:768px) {
     .mainContainer{
       flex-direction: column-reverse;
