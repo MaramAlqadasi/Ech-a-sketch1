@@ -5,7 +5,7 @@ let currentSize=defultSize;
 let currentMode=defultMode;
 let currentColor=defultColor;
 const color=document.querySelector(".color");
-const range=document.getElementById("range1");
+const range=document.querySelector("#range1");
 const board=document.querySelector(".board");
 const eraser=document.querySelector(".erase");
 const reset=document.querySelector(".reset");
@@ -14,6 +14,7 @@ const gray=document.querySelector(".gray");
 const oneColorBtn=document.querySelector(".one_color")
 const gridLine=document.querySelector(".grid");
 const rangeTitle=document.querySelector("#size1");
+
 
 
 
@@ -37,7 +38,7 @@ function setCurrentMode(newMode) {
 
 function reloadBoard(){
   clearBoard();
-  setGrids(defultSize);
+  setGrids(currentSize);
     
 }
 function clearBoard(){
@@ -85,7 +86,7 @@ function updateSizeValue(newSize) {
     }
   }
   
-range.addEventListener("change",e =>changeSize(e.target.value));
+range.addEventListener("change",e => changeSize(e.target.value));
 //range.addEventListener("mouseover",e =>changeSize(e.target.value));
 color.oninput = (e) => setCurrentColor(e.target.value)
 oneColorBtn.onclick = () => setCurrentMode("oneColor")
